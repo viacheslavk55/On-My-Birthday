@@ -8,6 +8,12 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://use.typekit.net/pal0hiu.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -21,25 +27,46 @@
             crossorigin="anonymous"
         />
     </head>
-
-    <body>
+ 
+    <body class="container-fluid d-flex flex-column">
         <!--Header starts-->
-        <header class="top p-4">
+        <header class="top p-4" style="font-family: 'Merriweather', serif;">
             <h1>On My Birthday...</h1>
         </header>
         <!--Header ends-->
 
         <div class="container">
-            <h3 class="text-center m-4">April 4th, 2007</h3>
-            <div class="row">
-                <div class="col-6">
-                    
+            <h3 class="text-center m-4" id="changeTitle" style="font-family: 'Merriweather', serif;">April 4th, 2007</h3>
+            <div class="row m-2">
+                <div class="col-12 col-lg-6 text-center">
+                    <img src="images/me.png" class="imagescont m-2" id="changeImage">
                 </div>
-                <div class="col-6">
-
+                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+                    <p class="text text-center m-2" id="changeText">Viacheslav Kostenko was born in Kyiv, Ukraine. He has 2 brothers and is the middle child. 16 years later he lives in the United States of America, and attends Marlboro High School. He also is the creator of this website.
+                    </p>
                 </div>
             </div>
-
+            <h5 class="text-center m-4" style="font-family: 'Merriweather', serif;">Click on each button to change events!</h5>
+            <div class="row">
+                <div class="col-12 col-lg-2">
+                    <button type="button" onclick="changeStuff1()" class="btn btn-outline-info w-100 m-2">1841</button>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <button type="button" onclick="changeStuff2()" class="btn btn-outline-info w-100 m-2">1850</button>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <button type="button" onclick="changeStuff3()" class="btn btn-outline-info w-100 m-2">1949</button>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <button type="button" onclick="changeStuff4()" class="btn btn-outline-info w-100 m-2">1968</button>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <button type="button" onclick="changeStuff5()" class="btn btn-outline-info w-100 m-2">1975</button>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <button type="button" onclick="changeStuff6()" class="btn btn-outline-info w-100 m-2">2007</button>
+                </div>
+            </div>
         </div>
 
 
